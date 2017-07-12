@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bookish.DataAccess;
 
 namespace Bookish.ConsoleApp
 {
@@ -10,6 +11,10 @@ namespace Bookish.ConsoleApp
     {
         static void Main(string[] args)
         {
+            foreach (var book in HelperMethods.GetBookList())
+            {
+                Console.WriteLine(book);
+            }
         }
     }
 }

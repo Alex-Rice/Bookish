@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookish", "Bookish.csproj", "{C85E739B-4939-496E-916E-AF917AA1938C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookish.ConsoleApp", "..\Bookish.ConsoleApp\Bookish.ConsoleApp.csproj", "{AB63DB37-5B1C-4968-820F-B3972CADE89F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookish.DataAccess", "Bookish.DataAccess\Bookish.DataAccess.csproj", "{537D816E-0112-4ED9-B3D2-2BFF22197946}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C85E739B-4939-496E-916E-AF917AA1938C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C85E739B-4939-496E-916E-AF917AA1938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C85E739B-4939-496E-916E-AF917AA1938C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C85E739B-4939-496E-916E-AF917AA1938C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB63DB37-5B1C-4968-820F-B3972CADE89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB63DB37-5B1C-4968-820F-B3972CADE89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB63DB37-5B1C-4968-820F-B3972CADE89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB63DB37-5B1C-4968-820F-B3972CADE89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537D816E-0112-4ED9-B3D2-2BFF22197946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537D816E-0112-4ED9-B3D2-2BFF22197946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537D816E-0112-4ED9-B3D2-2BFF22197946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537D816E-0112-4ED9-B3D2-2BFF22197946}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
