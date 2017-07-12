@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bookish.DataAccess
 {
-    class Program
+    class Book
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
