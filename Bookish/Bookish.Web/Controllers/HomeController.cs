@@ -26,5 +26,39 @@ namespace Bookish.Web.Controllers
 
             return View();
         }
+
+        public ActionResult UserHomepage()
+        {
+            ViewBag.Message = "Your user homepage.";
+
+            return View();
+        }
+
+        public ActionResult LibraryCatalog()
+        {
+            ViewBag.Message = "Library catalog.";
+
+            return View();
+        }
+
+        public ActionResult NewBookForm()
+        {
+            ViewBag.Message = "New book form.";
+            return View();
+        }
+
+        public ActionResult NewBookConfirmation()
+        {
+            ViewBag.Message = "New book confirmation.";
+
+            return View();
+        }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "Login page.";
+
+            return View();
+        }
     }
 }

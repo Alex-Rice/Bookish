@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Library Catalog";
+}
+
+<h1>Library Catalog</h1>
+
+<a>Add new book</a>
+<br/>
+<a>Back to user homepage (?)</a>
+
+<br/>
+<br/>
+
+<h4>(<a>Previous</a>) Viewing page 2 of 7 (<a>Next</a>);</h4>
+<table>
+    <thead>
+        <tr>
+            <td>ISBN</td>
+            <td>Title</td>
+            <td>Author</td>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < 10; ++i)
+        {
+            <tr>
+                <td>8172199980142</td>
+                <td>The Joy of Potato Farming</td>
+                <td>Jeremiah Smith</td>
+            </tr>
+            <tr>
+                <td>7619022899999</td>
+                <td>101 Ways to Spice Up Your Casserole</td>
+                <td>Quentin Auther</td>
+            </tr>
+            <tr>
+                <td>6666666666666</td>
+                <td>A Beginner's Guide to Eating Sandwiches</td>
+                <td>Steve Jenkins</td>
+            </tr>
+        }
+    </tbody>
+</table>

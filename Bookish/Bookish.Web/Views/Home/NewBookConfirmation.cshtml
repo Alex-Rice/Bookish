@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "New Book";
+}
+
+<h1>Successfully added a book to the catalog.</h1>
+
+<h2>Book added:</h2>
+<h4>ISBN: 8172667261901</h4>
+<h4>Title: How to Cook an Egg in 53 Easy Steps</h4>
+<h4>Author: Joseph Raiter</h4>
+
+<br />
+
+<h4>Number of new copies: 3</h4>
+<h4>Total now in stock: 65</h4>
+
+
+<h2>New barcodes:</h2>
+@for (int i = 0; i < 3; ++i)
+{
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2dYbsCerLrfknzFf20I71O8PnuWw21nIf7QdZ-n6e6j173ms-gHJrIRk" />
+}
+
+<br/>
+<br/>
+
+<a>Back to catalog</a>

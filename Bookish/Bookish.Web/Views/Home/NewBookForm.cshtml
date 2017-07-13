@@ -1,0 +1,54 @@
+﻿@model NewBookViewModel
+
+@{
+    ViewBag.Title = "New Book";
+}
+
+@{
+    var isbnInput = "";
+    var titleInput = "";
+    var authorInput = "";
+    var copiesInput = "";
+
+    if (IsPost)
+    {
+        isbnInput = Request.Form["isbn"];
+        titleInput = Request.Form["title"];
+        authorInput = Request.Form["author"];
+        copiesInput = Request.Form["copies"];
+    }
+
+    /*
+    IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
+    string SqlString = "INSERT INTO books ()" 
+    return (List<Book>) db.Query<Book>(SqlString);
+    */
+}
+
+<h1>Add a new book to the catalog:</h1>
+
+@using (Html.BeginForm("Create", "NewBook"))
+{
+        <fieldset>
+            <p style="font-size: 20px">
+                @Html.LabelFor(model => model.Isbn)
+                @Html.EditorFor(model => model.Isbn)
+                @Html.ValidationMessageFor(model => model.Isbn)
+                @*            ISBN: <input type="text" name="isbn" value="@Request.Form["isbn"]"/>*@
+            </p>
+            <p style="font-size: 20px">
+                Title: <input type="text" name="title" value="@Request.Form["title"]"/>
+            </p>
+            <p style="font-size: 20px">
+                Author: <input type="text" name="author" value="@Request.Form["author"]"/>
+            </p>
+            <p style="font-size: 20px">
+                Number of copies: <input type="text" name="numberofcopies" value="@Request.Form["copies"]"/>
+            </p>
+        </fieldset>
+}
+
+
+<a>Add new book</a>
+<br/>
+<a>Cancel</a>
